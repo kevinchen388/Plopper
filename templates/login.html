@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <meta name="description" content="">
+                    <meta name="author" content="">
+
+                        <title>Plopper!</title>
+
+
+                        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                            <link rel="stylesheet" type="text/css" href="../static/stylesheets/other.css">
+
+                            <!--<link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/other.css') }}">-->
+
+
+                                </head>
+
+    <body class="text-center">
+
+        <div class="cover-container d-flex h-100 p-3 flex-column flex-column">
+          <main role="main" class="main">
+            <header class="masthead mx-auto row justify-content-center">
+                <div class="navbar justify-content-center">
+                    <nav class="nav nav-masthead justify-content-center" >
+                        <a class="nav-link site-name" href="/">
+                            <img src="../static/resources/logo.png" width="20px" height="30px" class="d-inline-block align-top" alt="fail">
+                             Plopper
+                        </a>
+                        <a class="nav-link" href="/">Home</a>
+                        <a class="nav-link" href="/plop">Plop</a>
+                        <a class="nav-link" href="/search">Search</a>
+                        <a class="nav-link active" href="/login">Login</a>
+                        <form class="nav-link nav-search">
+                            <input class="search-bar" type="text" placeholder="Enter location" />
+                            <button class="nav-submit" type="submit">Search</button>
+                        </form>
+
+                    </nav>
+                </div>
+            </header>
+
+
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h4 style="padding-bottom: 3px;">Login</h4>
+                            <form method = "POST">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" name="emaily" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                        </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" name="passwordy" class="form-control" id="exampleInputPassword1" placeholder="Enter password">
+                                        </div>
+                                <div class="form-group" style="margin-top:1rem">
+                                    <input type="submit" name="buttony" class="btn btn-primary" value="login" />
+                                      </div>
+                            </form>
+                        </div>
+                        <div class="col">
+                            <h4 style="padding-bottom: 3px;">Sign Up</h4>
+                            <form method = "POST">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="firstName" name = "firsty" class="form-control" id="inputFirstName" placeholder="Enter first name">
+                                        </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="lastName" name = "lasty" class="form-control" id="inputLastName" placeholder="Enter last name">
+                                        </div>
+                                <div class="form-group">
+                                    <label for="enterEmail">Email address</label>
+                                    <input type="enterEmail" name = "emaily2" class="form-control" id="enterEmail" aria-describedby="emailHelp" placeholder="Enter email address">
+                                        </div>
+                                <div class="form-group">
+                                    <label for="inputPassword">Password</label>
+                                    <input type="password" name = "passwordy2" class="form-control" id="inputPassword" placeholder="Create password">
+                                        </div>
+                                <div class="form-group" style="margin-top:1rem">
+                                    <input type="submit"  name="buttony" class="btn btn-primary" value="signup" />
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="mastfoot mt-auto">
+                <div class="inner">
+                    <p>Created By Plopper Inc</p>
+                </div>
+            </footer>
+        </div>
+
+
+        <!-- Bootstrap core JavaScript
+         ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    </body>
+</html>

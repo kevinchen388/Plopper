@@ -1,0 +1,163 @@
+
+a,
+a:focus,
+a:hover {
+    color: #592734;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #fff;
+    text-shadow: none; /* Prevent inheritance from `body` */
+    background-color: #fff;
+    border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+    height: 100%;
+    background-color: #f8f8f3;
+    background-image: url(../resources/luxuriousToilet1-fixed.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: #333;
+    text-shadow: 0 .05rem .05rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 1rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+    width: 100%;
+    overflow: auto;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+    margin-bottom: 1rem;
+
+}
+
+.masthead-brand {
+    margin-bottom: 0;
+
+}
+
+.navbar{
+    width: 100%;
+}
+
+.main{
+    position: relative;
+}
+
+.form-group{
+    margin-bottom: 0em !important;
+}
+
+.nav-masthead .nav-link {
+    padding: .25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, .5);
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+    border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+    margin-left: 1rem;
+}
+
+.nav-submit{
+    border-radius:.5rem;
+    color:white;
+    background-color:#800020;
+}
+
+.nav-masthead .active {
+    color: #800020;
+    border-bottom-color: #800020;
+}
+
+.btn{
+    margin-top: 5px !important;
+    padding-top: -3px !important;
+}
+
+@media (max-width: 670px) {
+    .smaller-screen-padding{
+        position: relative;
+        top: -2rem;
+        margin-top: 20px !important;
+        margin-bottom: 10px !important;
+    }
+    .nav-link{
+        margin-top: 20px !important;
+    }
+}
+
+@media (max-width: 370px) {
+    .navbar{
+        padding: 0px;
+    }
+    .nav-masthead .nav-link + .nav-link {
+        margin-left: 8px;
+    }
+    .smaller-screen-padding{
+        position: relative;
+        top: -2rem;
+        margin-top: 20px !important;
+        margin-bottom: 10px !important;
+    }
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+    padding: 0 10rem;
+}
+.cover .btn-lg {
+    padding: .75rem 1.25rem;
+    font-weight: 700;
+}
+
+
+
+
+/*
+ * Footer
+ */
+.mastfoot {
+    color: rgba(255, 255, 255, .5);
+}
+
+
+
+
+.site-name{
+    color: #333 !important;
+    font-size: 1.17em !important;
+}
